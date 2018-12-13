@@ -1,37 +1,35 @@
-let canvasWidth = 800;
+const canvasWidth = 800;
 const canvasHeight = 600;
 
-let cardW = 76;
-let cardH = cardW * 2
+const cardW = 76;
+const cardH = cardW * 2
 const cardDefaultX = Math.floor(canvasWidth * 0.025);
 const cardDefaultY = canvasHeight - cardH;
 
 const suits = ['spada', 'kupa', 'dinar', 'baston'];
-var gamePhase = 'start';
-var deck = [];
-var shuffled;
+let gamePhase = 'start';
+let deck = [];
+let shuffled;
 
-var humanPlayer;
-var queue = [];
+let humanPlayer;
+let queue = [];
 
-var team1;
-var team2;
+let team1;
+let team2;
 
-var startTime = -1
-var winingCard = {};
+let startTime = -1
+let winingCard = {};
 
-var firstPlayer;
-var lockPlayer = false;
+let firstPlayer;
+let lockPlayer = false;
 
 //1 = humanPlayer, 2 = enemy1 ...
-var current = 1;
-var board = [];
-var images = [];
+let current = 1;
+let board = [];
+let images = [];
 let bg;
 let waitTime = 500;
 let showTime = 800;
-
-
 
 function preload() {
     for (var i = 0; i <= 3; i++) {
@@ -110,7 +108,7 @@ function draw() {
 function showBoard() {
     let i = 0;
     for (var card of board) {
-        card.x = 228 + (cardW + 10) * i++;
+        card.x = 233 + (cardW + 10) * i++;
         card.y = canvasHeight/2 - cardH;
         card.show();
     }
