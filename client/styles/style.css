@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.buttons {
+    background: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 0.2em 1em;
+    margin-right: 10px;
+}
+
+button {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 3px 15px;
+    color: black;
+    line-height: 25px;
+    background-color: #d4d000;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+    transition: all 150ms ease-in;
+    outline: none;
+  }
+  
+  .chatdiv {
+    padding: 10px;
+  }
+  
+  .chatdiv form {
+    display: flex;
+  }
+  
+  .chatdiv form input {
+    font-size: 1.0rem;
+    margin: 0 10px 0 0;
+    padding: 0 5px;
+    flex-grow: 1;
+  }

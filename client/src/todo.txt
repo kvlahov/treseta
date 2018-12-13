@@ -1,0 +1,5 @@
+ - adjust cards in hand cooridinates (smooth animation) [check]
+ - implement "strišo", "tuči"
+ - add sounds
+ - implement custom loading screen;
+ - implement better ai;
