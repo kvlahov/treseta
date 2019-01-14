@@ -6,3 +6,4 @@
 - [ ] add sounds
 - [ ] implement custom loading screen;
 - [ ] implement better ai;
+- [ ] implement tutorial
