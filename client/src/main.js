@@ -90,6 +90,7 @@ function draw() {
         cursor(ARROW);
     }
 
+    
     if (coordinatesAdjusted) {
         for (let card of humanPlayer.hand) {
             transitionAnimation(card, destinationCards[humanPlayer.hand.indexOf(card)]);
