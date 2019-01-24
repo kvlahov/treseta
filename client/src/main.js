@@ -34,13 +34,13 @@ let showTime = 800;
 function preload() {
     for (var i = 0; i <= 3; i++) {
         for (var j = 2; j <= 11; j++) {
-            var img = loadImage(`../assets/img/karte/Karte-briskola [www.imagesplitter.net]-${i}-${j}.png`);
+            var img = loadImage(`client/assets/img/karte/Karte-briskola [www.imagesplitter.net]-${i}-${j}.png`);
             images.push(img);
         }
     }
     // bg = loadImage('./assets/img/background.png');
     // bg = loadImage('./assets/img/background2.jpg');
-    bg = loadImage('../assets/img/background3.jpg');
+    bg = loadImage('client/assets/img/background3.jpg');
 }
 
 function setup() {
