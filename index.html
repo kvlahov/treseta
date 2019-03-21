@@ -6,24 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>p5.js example</title>
     <link rel="stylesheet" href="client/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600i" rel="stylesheet">
     <script src="client/library/p5.min.js"></script>
+    <script src="client/library/scenemanager.js"></script>
+    <script src="client/library/jquery-3.3.1.min.js"></script>
+    <script src="client/library/jquery-ui.min.js"></script>
+    <script src="client/library/addons/p5.sound.min.js"></script>
 
     <script src="client/src/main.js"></script>
     <script src="client/src/card.js"></script>
     <script src="client/src/player.js"></script>
     <script src="client/src/team.js"></script>
+    <script src="client/src/GameOver.js"></script>
+    <script src="client/src/Tutorial.js"></script>
+    <script src="client/src/Transition.js"></script>
+    <script src="client/src/Scenes/Test.js"></script>
+    <script src="client/src/Scenes/Animation.js"></script>
+
 </head>
 
 <body>
-    
-    <div class="buttons">
-        <button onclick="changeSpeed('slower')">Slower</button>
-        <button onclick="changeSpeed('reset')">Reset</button>
-        <button onclick="changeSpeed('faster')">Faster</button>
-        <button onclick="changeSpeed('skip')">Skip Animations</button>
-    </div>
-    <div id="sketch">
-        <!-- Sketch goes here   -->
+
+    <div id="container">
+        <div class="buttons">
+            <button onclick="changeSpeed('slower')">Slower</button>
+            <button onclick="changeSpeed('reset')">Reset</button>
+            <button onclick="changeSpeed('faster')">Faster</button>
+            <button onclick="changeSpeed('skip')">Skip Animations</button>
+        </div>
+        <div id="sketch">
+            <!-- Sketch goes here   -->
+            <div id="menuContainer">
+                <div id="loadingScreen">
+                    <h2>Loading...</h2>
+                </div>
+                <div id="menu" style="display:none">
+                    <img id="logo" src="./client/assets/img/logo.png" alt="">
+                    <button id="play" class="menuBtn">Play</button>
+                    <button id="tutorial" class="menuBtn">Tutorial</button>
+                    <button class="disabled menuBtn">Multiplayer</button>
+                    <!-- <button id = "test" class="menuBtn">Test</button> -->
+                </div>
+                <button id="mmButton" class="menuBtn">Main Menu</button>
+                <div id="tutorialText">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa recusandae illo ullam quo totam
+                        laborum itaque ipsa natus ad corrupti. Alias nemo labore fugit nobis error quidem beatae
+                        voluptates harum!
+                        Perspiciatis eligendi modi fugit ullam dolor velit aliquid numquam fuga, vitae, est recusandae
+                        delectus quasi, eaque assumenda eos dolore autem. A, perspiciatis. Voluptatum cumque quaerat
+                        quidem delectus eos assumenda repudiandae.
+                        Consequatur laboriosam dicta iusto amet quas. Asperiores maxime assumenda atque voluptas, non
+                        fuga in rerum omnis illum. Eaque quisquam eos ullam, enim libero quibusdam hic iusto id et
+                        praesentium modi!
+                        Cum accusantium facere rerum ut eos, at qui consequuntur, hic ducimus dolorem eum nesciunt ea
+                        explicabo sint aliquid culpa minus dolor asperiores vel numquam, officia reprehenderit obcaecati
+                        saepe distinctio. Maiores.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
