@@ -27,6 +27,8 @@ body {
 
   height: 100vh;
 
+  overflow:hidden;
+
   background: linear-gradient(rgba(12, 71, 10, 0.226), rgba(8, 80, 6, 0.185)),linear-gradient(rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.733)), url('../assets/img/index_background.jpg');;
   
   background-repeat: no-repeat;

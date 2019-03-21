@@ -40,7 +40,6 @@ function setup() {
     let canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent("sketch");
     soundtrack.setLoop(true);
-    soundtrack.play();
 
     //show menu when everything loads
     $('#menu').fadeIn(800);
@@ -110,6 +109,8 @@ $(function () {
         sceneManager.showScene(Test, { bg, images });
         $("#menu").hide();
     })
+
+    $('#p5_loading').hide();
 })
 
 function Menu() {
@@ -169,6 +170,8 @@ function Game() {
                 deck.push(new Card(i, suits[j], tempImages.shift()));
             }
         }
+        soundtrack.play();
+
     }
 
     this.enter = function () {
