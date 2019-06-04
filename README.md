@@ -1,9 +1,7 @@
 # Treseta
-### TODO:
+### Live preview:
 
-- [x] adjust cards in hand cooridinates (smooth animation)
-- [ ] implement "strišo", "tuči"
-- [ ] add sounds
-- [ ] implement custom loading screen;
-- [ ] implement better ai;
-- [ ] implement tutorial
+https://kvlahov.github.io/treseta/
+
+Not 100% finished
+Used Javascript (p5.js library)
